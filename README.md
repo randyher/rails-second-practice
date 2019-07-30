@@ -4,4 +4,6 @@
 
 2. A review needs a rating from 1 to 5.
 
-3. As a user, I can make a review for a TV show, choose an existing user and existing TV show.
+3. There should be an index page for the viewers and TV shows.
+
+4. As a user, I can make a review for a TV show, choose an existing user and existing TV show.
