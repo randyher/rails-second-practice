@@ -5,6 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Viewer.destroy_all
+TvShow.destroy_all
+
+ActiveRecord::Base.connection.execute("DELETE from sqlite_sequence where name = 'viewers'")
+ActiveRecord::Base.connection.execute("DELETE from sqlite_sequence where name = 'tv_shows'")
 
 Viewer.create(name: "Jon", age: 26, favorite_genre: "Mystery")
 Viewer.create(name: "Dany", age: 22, favorite_genre: "Action")
